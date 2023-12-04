@@ -1,0 +1,22 @@
+<h2>YOU ARE NOW LOGGED IN!</h2>
+<div>
+    <button (click)="getList()">GetList</button>
+</div>
+
+<div>
+    <button (click)="getRefreshed()">Get New Tokens</button>
+</div>
+
+<div>
+    <button (click)="logout()">Logout</button>
+</div>
+
+<!-- view -->
+
+<div>
+    <button (click)="getList()">Get Color List</button>
+    <ul *ngIf="client">
+      <li *ngFor="let color of client"> {{ color }} </li>
+    </ul>
+  </div>
+  
